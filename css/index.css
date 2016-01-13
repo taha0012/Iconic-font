@@ -7,21 +7,28 @@ font-family: sans-serif;
 
 html {
 	box-sizing: border-box;
-
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
 
+h1 {
+	margin-left:45%;
+	margin-top:20%;
+}
+
+body {
+	color:#FF8A8C;
+}
 .btn {
 	color:#FF8A8C;
 	background-color:#000000;
 	padding: 3em 1em;
+	margin-left:47%;
 	display: inline-block;
 	text-decoration:none;
 }
-
 
 .btn:hover,
 .btn:active,
@@ -47,4 +54,54 @@ html {
 		-ms-transform:     rotate( 360deg );  /* IE*/
 		color:#FF8A8C;
 	}
+}
+	.btn2 {
+	color:#FF8A8C;
+	animation-name: slidein;
+	display: block;
+	text-decoration:none;
+	animation-duration: 1s;
+	margin-left:15%;
+}
 
+@keyframes slidein {
+	from {
+		margin-left:100%;
+	}
+	to {
+	margin-left:15%;
+	}
+}
+.btn3 {
+	color:#FF8A8C;
+	animation-name: slidein2;
+	display: block;
+	text-decoration:none;
+	animation-duration: 1s;
+	margin-left:47%;
+}
+
+@keyframes slidein2 {
+	from {
+		margin-left:100%;
+	}
+	to {
+	margin-left:47%;
+	}
+}.btn4 {
+	color:#FF8A8C;
+	animation-name: slidein3;
+	display: block;
+	text-decoration:none;
+	animation-duration: 1s;
+	margin-left:15%;
+}
+
+@keyframes slidein3 {
+	from {
+		margin-left:100%;
+	}
+	to {
+	margin-left:90%;
+	}
+}
