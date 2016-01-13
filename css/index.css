@@ -15,11 +15,12 @@ html {
 
 h1 {
 	margin-left:45%;
-	margin-top:20%;
+	margin-top:10%;
 }
 
 body {
 	color:#FF8A8C;
+	margin-top:5rem;
 }
 .btn {
 	color:#FF8A8C;
@@ -28,6 +29,7 @@ body {
 	margin-left:47%;
 	display: inline-block;
 	text-decoration:none;
+	margin-bottom:8rem;
 }
 
 .btn:hover,
@@ -88,13 +90,14 @@ body {
 	to {
 	margin-left:47%;
 	}
-}.btn4 {
+}
+.btn4 {
 	color:#FF8A8C;
 	animation-name: slidein3;
 	display: block;
 	text-decoration:none;
 	animation-duration: 1s;
-	margin-left:15%;
+	margin-left:90%;
 }
 
 @keyframes slidein3 {
