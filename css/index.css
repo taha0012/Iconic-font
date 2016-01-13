@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -15,39 +14,37 @@ html {
 	text-size-adjust: 100%;
 }
 
-body{
-  padding: 1em;
-  background: #2B3134;
-  color: #777;
-  text-align: center;
-  font-family: "Gill sans", sans-serif;
-  width: 80%;
-  margin: 0 auto;
-}
-h1{
-  margin: 1em 0;
-  border-bottom: 1px dashed;
-  padding-bottom: 1em;
-  font-weight: lighter;
-}
-p{
-  font-style: italic;
-}
-.loader{
-  margin: 0 0 2em;
-  height: 100px;
-  width: 20%;
-  text-align: center;
-  padding: 1em;
-  margin: 0 auto 1em;
-  display: inline-block;
-  vertical-align: top;
+.btn {
+	color:#FF8A8C;
+	background-color:#000000;
+	padding: 3em 1em;
+	display: inline-block;
+	text-decoration:none;
 }
 
-/*
-  Set the color of the icon
-*/
-svg path,
-svg rect{
-  fill: #FF6700;
+
+.btn:hover,
+.btn:active,
+.btn:focus{
+	animation-name: rotate;
+	animation-duration: 1s;
+	background-color: pink;
 }
+@keyframes rotate {
+	from {
+		transform:rotate( 0deg );
+		-moz-transform:    rotate( 0deg );  /* Firefox*/
+		-webkit-transform: rotate( 0deg );  /* Chrome,Safari,pera*/
+		-o-transform:      rotate( 0deg );  /* oldOpera*/
+		-ms-transform:     rotate( 0deg );  /* IE*/
+		color:#FFFFFF;
+	}
+	to {
+		transform:rotate( 360deg );
+		-moz-transform:    rotate( 360deg );  /* Firefox*/
+		-webkit-transform: rotate( 360deg );  /* Chrome,Safari,pera*/
+		-o-transform:      rotate( 360deg );  /* oldOpera*/
+		-ms-transform:     rotate( 360deg );  /* IE*/
+		color:#FF8A8C;
+	}
+
